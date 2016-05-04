@@ -89,7 +89,7 @@ Head back to the lambda function on aws and replace the application_id and url w
 
 From the root directory, issue the command ````docker-compose up -d````, then ````docker-compose logs```` and search for the string ````http://2a52d01e.ngrok.io```` or something similar.
 
-In case that you are running with a RaspberryPi, just change the docker compose command to something like ````docker-compose -f docker-compose-armhf.yml up```` and search for the string ````http://2a52d01e.ngrok.io```` or something similar..
+In case you are running with a RaspberryPi, just change the docker compose command to something like ````docker-compose -f docker-compose-armhf.yml up```` and search for the string ````http://2a52d01e.ngrok.io```` or something similar.
 
 
 ######Almost done!!!!
