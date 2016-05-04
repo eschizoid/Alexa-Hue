@@ -63,11 +63,11 @@ Run the following two commands in the Docker CLI terminal. First:
 
 In case you are using a RaspberryPi (armhf), run the following command:
 
-````docker run -e "TZ=America/New_York" -itdP --name=docker-alexa-hue eschizoid/docker-alexa-hue:armhf````
+````docker run -e "TZ=America/New_York" -itdP --name=docker-alexa-hue eschizoid/docker-alexa-hue-armhf````
 
 (You'll have to replace the TZ parameter with the appropriate value. There's a partial list of US TZ names at the bottom of this Readme.)
 
-````docker run --rm -it --link docker-alexa-hue wernight/ngrok ngrok http docker-alexa-hue:4567````
+````docker run --rm -it --link docker-alexa-hue eschizoid/docker-ngrok-armhf ngrok http docker-alexa-hue:4567````
 
 Again, the equivalent command for a RaspberryPi would be:
 
@@ -84,6 +84,12 @@ Head back to the lambda function on aws and replace the application_id and url w
 ```` 'amzn1.echo-sdk-ams.app.3be28e92-xxxx-xxxx-xxxx-xxxxxxxxxxxx':'http://2a52d01e.ngrok.io/lights' ````
 
 (Don't forget to at ' /lights ' to the end of the URL)
+
+######Alternative Server installation (using docker-compose)
+
+From the root directory, issue the command ````docker-compose up -d````, then ````docker-compose logs```` and search for the string ````http://2a52d01e.ngrok.io```` or something similar.
+
+In case that you are running with a RaspberryPi, just change the docker compose command to something like ````docker-compose -f docker-compose-armhf.yml up```` and search for the string ````http://2a52d01e.ngrok.io```` or something similar..
 
 
 ######Almost done!!!!

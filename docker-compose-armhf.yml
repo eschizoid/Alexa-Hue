@@ -8,7 +8,5 @@ ngrok:
 dockerAlexaHue:
   image: 'eschizoid/docker-alexa-hue-armhf'
   restart: always
-#  ports:
-#    - '4567:4567'
   environment:
     TZ: America/Chicago
