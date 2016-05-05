@@ -3,6 +3,7 @@ bedroom lights
 fireplace lights
 floor light
 overhead light
+livingroom lights
 
 ATTRIBUTE
 Saturation
