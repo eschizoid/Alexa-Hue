@@ -9,4 +9,4 @@ dockerAlexaHue:
   image: 'eschizoid/docker-alexa-hue-armhf'
   restart: always
   environment:
-    TZ: America/Chicago
+    TZ: ${TIMEZONE}
