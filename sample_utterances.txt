@@ -1,5 +1,8 @@
 ControlLights turn the {Lights} {State}
 ControlLights turn {State} the {Lights}
+
+Alexa ask hue turn on the living lights
+
 ControlLights set {Scene} scene
 ControlLights set {Scene} seen
 ControlLights set seen {Scene}
