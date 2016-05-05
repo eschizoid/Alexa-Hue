@@ -10,5 +10,5 @@ docker-alexa-hue:
   image: 'sarkonovich/docker-alexa-hue'
   restart: always
   environment:
-    TZ: America/Chicago
+    TZ: ${TIMEZONE}
   container_name: docker-alexa-hue
