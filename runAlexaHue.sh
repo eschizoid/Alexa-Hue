@@ -13,7 +13,7 @@ then
   if [ "$2" == "pi" ]
   then
     echo "Executing docker compose for RaspberryPi platform"
-    docker-compose up -f docker-compose-armhf.yml &
+    docker-compose -f docker-compose-armhf.yml up &
   elif [[ "$2" == "win" || "$2" == "mac" ]]
   then
     echo "Executing docker compose for Windows / OS X platform"
